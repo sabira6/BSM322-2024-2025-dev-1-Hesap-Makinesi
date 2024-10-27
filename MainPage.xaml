@@ -1,0 +1,28 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Odev1.MainPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+
+        
+        <Entry x:Name="FirstNumberEntry" Placeholder="İlk sayıyı girin" Keyboard="Numeric" />
+
+        
+        <Entry x:Name="SecondNumberEntry" Placeholder="İkinci sayıyı girin" Keyboard="Numeric" />
+
+        
+        <HorizontalStackLayout Spacing="10">
+            
+            <Button Text="+" Clicked="OnAddClicked" />
+            <Button Text="-" Clicked="OnSubtractClicked" />
+            <Button Text="×" Clicked="OnMultiplyClicked" />
+            <Button Text="÷" Clicked="OnDivideClicked" />
+        </HorizontalStackLayout>
+
+       
+        <Label x:Name="ResultLabel" Text="Sonuç: " FontSize="Large" TextColor="Black" HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
